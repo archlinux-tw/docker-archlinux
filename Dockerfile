@@ -7,3 +7,5 @@ RUN \
   sed -i -e '1i'$'Server = http://archlinux.cs.nctu.edu.tw/$repo/os/$arch' /etc/pacman.d/mirrorlist && \
   sed -i -e 's|^#zh_TW.UTF-8|zh_TW.UTF-8|' /etc/locale.gen && \
   locale-gen
+
+ENV LC_ALL zh_TW.UTF-8
